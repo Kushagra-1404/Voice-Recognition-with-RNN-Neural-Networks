@@ -1,0 +1,28 @@
+Args:
+	input_size          : 12
+	batch_size          : 1
+	hidden_size         : 64
+	num_layers          : 3
+	num_epochs          : 12
+	learning_rate       : 0.001
+	learning_rate_decay_interval: 5
+	learning_rate_decay_rate: 0.5
+	weight_decay        : 0.0
+	gradient_accumulations: 16
+	load_weights_from   : None
+	finetune_model      : False
+	device              : cpu
+	data_folder         : data/speech_commands/
+	train_eval_test_ratio: [0.9, 0.1, 0.0]
+	do_data_augment     : True
+	classes_txt         : config/classes.names
+	num_classes         : 10
+	plot_accu           : True
+	show_plotted_accu   : False
+	save_model_to       : checkpoints/
+	save_log_to         : checkpoints/log.txt
+	save_fig_to         : checkpoints/fig.jpg
+
+Accuracies:
+	Epoch     Train     Eval      Test      
+	1         0.391     0.625     -0.100    
